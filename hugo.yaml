@@ -1,0 +1,300 @@
+--- 
+baseURL: "https://diogolongo.github.io"
+languageCode: "en-us"
+title: "Diogo Longo Blog"
+theme: hugo-profile
+
+outputs:
+  home:
+    - "HTML"
+    - "RSS"
+    - "JSON"
+  page:
+    - "HTML"
+    - "RSS"
+
+enableRobotsTXT: true
+
+pagination:
+  pagerSize: 3
+
+mediaTypes:
+  font/otf:
+    delimiter: .
+    suffixes:
+      - otf
+  font/ttf:
+    delimiter: .
+    suffixes:
+      - ttf
+
+markup:
+  goldmark:
+    renderer:
+      unsafe: true
+
+Menus:
+  main:
+    - identifier: blog
+      name: Blog
+      title: Blog posts
+      url: /blogs
+      weight: 1
+    - identifier: Hobbies
+      name: Hobbies
+      title: Hobbies
+      url: /hobbies
+      weight: 2
+
+params:
+  title: "Diogo Longo"
+  description: "Experienced full stack developer and solution architect with over 10 years of experience in cloud‑native, microservices, and front‑end technologies."
+  favicon: "/fav.png"
+  useBootstrapCDN: false
+  mathjax: false
+  animate: true
+  theme:
+    # disableThemeToggle: true
+    # defaultTheme: "light" # dark
+
+  font:
+    fontSize: 1rem
+    fontWeight: 400
+    lineHeight: 1.5
+    textAlign: left
+
+  navbar:
+    align: ms-auto
+    brandLogo: "/rounded_logo.png"
+    brandName: "Diogo Longo"
+    disableSearch: false
+    stickyNavBar:
+      enable: true
+      showOnScrollUp: true
+    enableSeparator: false
+    menus:
+      disableAbout: false
+      disableExperience: false
+      disableEducation: false
+      disableProjects: false
+      disableAchievements: false
+      disableContact: false
+
+  hero:
+    enable: true
+    intro: "Hi, my name is"
+    title: "Diogo."
+    subtitle: "Tech Lead Engineer & Solution Architect"
+    content: |
+      Highly qualified Full Stack Software Engineer and Solution Architect with 15+ years of experience designing and delivering scalable, cloud-native systems. Strong expertise in Java, Spring Boot, Angular, AWS, Azure, Terraform, and Kubernetes. Proven leader focused on robust architectures, technical excellence, and team collaboration to deliver high-impact solutions.
+
+    image: "/squared_logo.png"
+    bottomImage:
+      enable: true
+    button:
+      enable: true
+      name: "Resume"
+      url: "https://www.linkedin.com/in/diogolongo/"
+      download: false
+      newPage: false
+    socialLinks:
+      fontAwesomeIcons:
+        - icon: fab fa-linkedin
+          url: https://www.linkedin.com/in/diogolongo
+        - icon: fab fa-github
+          url: https://github.com/diogolongo
+        - icon: fab fa-twitter
+          url: https://twitter.com/diogolongo
+        - icon: fab fa-instagram
+          url: http://instagram.com/diogolongo
+#      customIcons:
+#        - icon: /fav.png
+#          url: https://www.linkedin.com/in/diogolongo
+
+  about:
+    enable: true
+    title: "About Me"
+    image: "/images/me.png"
+    content: |
+      I am a software developer with a passion for web development. I have a background in computer science, and I have a strong interest in the intersection of technology and politics. I am currently working as a Tech Lead at Bradesco in São Paulo, Brazil.
+    skills:
+      enable: true
+      title: "Technologies I work with"
+      items:
+        - "Java"
+        - "Spring Boot"
+        - "Microservices"
+        - "REST APIs"
+        - "Angular"
+        - "Terraform"
+        - "AWS"
+        - "Azure"
+        - "Kubernetes"
+        - "Docker"
+        - "Kafka"
+        - "Redis"
+        - "Python"
+        - "Go"
+        - "MongoDB"
+        - "Blockchain"
+        - "Git"
+        - "CI/CD"
+        - "DevOps"
+
+  experience:
+    enable: true
+    items:
+      - company: "Bradesco"
+        companyUrl: "https://www.bradesco.com.br"
+        jobs:
+          - name: "Tech Lead Engineer"
+            date: "May 2025 - Present"
+            content: |
+              Responsible for designing and leading the development of scalable, cloud‑based enterprise solutions built on Azure, Java, Spring, and Angular. Focus on building robust microservice architectures that enable agility, maintainability, and performance at scale.
+            info:
+              content: "Tech Lead, Software Architecture"
+            featuredItems:
+              fontAwesomeIcons:
+                - icon: fa-brands fa-java
+                  url: https://www.oracle.com/java/
+                  tooltip: Java
+                - icon: fab fa-aws
+                  url: https://aws.amazon.com/
+                  tooltip: AWS
+                - icon: fab fa-cloud
+                  url: https://azure.microsoft.com/
+                  tooltip: Azure
+                - icon: fab fa-kubernetes
+                  url: https://kubernetes.io/
+                  tooltip: Kubernetes
+#              customIcons:
+#                - icon: /fav.png
+#                  url: https://www.bradesco.com.br
+#                  tooltip: Bradesco
+
+      - company: "Jusbrasil"
+        companyUrl: "https://www.jusbrasil.com.br"
+        jobs:
+          - name: "Senior Software Engineer"
+            date: "July 2024 - August 2025"
+            content: |
+              Worked on solutions to improve document resolution on lawsuits from Brazil's legal justice system, delivering background checks as a SaaS service.
+
+      - company: "Globant"
+        companyUrl: "https://www.globant.com"
+        jobs:
+          - name: "Senior Software Designer"
+            date: "July 2023 - July 2024"
+            content: |
+              Acted as software design consultant for American companies, migrating legacy Oracle solutions to the cloud using Kubernetes, Docker, Spring Boot, RDS, Kafka, and Redis.
+
+      - company: "BairesDev"
+        companyUrl: "https://www.bairesdev.com"
+        jobs:
+          - name: "Senior Software Engineer"
+            date: "May 2022 - June 2023"
+            content: |
+              Consulted as Java/DevOps engineer, worked on an API that supports the main site search for Shutterstock, improved the Solr cluster and logs management, and managed user achievements platform on an edtch company.
+
+      - company: "Itaú Unibanco"
+        companyUrl: "https://www.itau.com.br"
+        jobs:
+          - name: "Tech Lead"
+            date: "December 2021 - May 2022"
+            content: |
+              Acted as Java Engineer / Tech Lead on scheduling solutions for all bank products, including the Pix transfer solution. Built microservices in Java/Spring and Python Lambdas, using Rest APIs, AWS and Kafka.
+
+      - company: "CVC CORP"
+        companyUrl: "https://www.cvc.com.br"
+        jobs:
+          - name: "Software Engineer"
+            date: "April 2017 - June 2020"
+            content: |
+              Developed integration with new partners and products using REST APIs and SOAP, modernized the interface from GWT to Angular.
+
+  education:
+    enable: true
+    items:
+      - title: "MBA - Solution Architect"
+        school:
+          name: "FIAP"
+          url: "https://www.fiap.com.br"
+        date: "2013 - 2014"
+        GPA: "Top 5 Final Project - Passo & Pego - An app solution for picking up food in restaurants"
+        content: |
+          Postgraduate in Solution Architecture, focused on designing enterprise solutions using cloud and modern architecture patterns.
+
+      - title: "Bachelor of Science in Information Systems"
+        school:
+          name: "Centro Universitário Fundação Santo André"
+          url: "https://www.fsa.br"
+        date: "2004 - 2007"
+        GPA: "N/A"
+        content: |
+          Bachelor's degree in Information Systems, with a focus on software engineering, database design, and systems analysis.
+
+  achievements:
+    enable: true
+    items:
+      - title: "Itau Legacy Application"
+        content: "Migrated legacy Cobol application to microservices on AWS without bugs and without downtime."
+        image: "/itau.png"
+      - title: "Disney Log Management Optimization"
+        content: "Reduced log management costs using Glue Crawler and Athena."
+        image: "/pngwing.com.png"
+      - title: "Shutterstock Costs Reduced"
+        content: "Reduced cloud costs rewrite solution using Glue Crawler and Athena, and upgrading solr clusters."
+        image: "/shutterstock.png"
+      - title: "Eicon Performance Improved"
+        content: "Improve performance of legacy applications by 30% using database tunning and app clusters tweaks"
+        image: "/eicon.png"
+
+  projects:
+    enable: false
+
+  contact:
+    enable: true
+    content: |
+      My inbox is always open. Whether you have a question or just want to say hi, I’ll try my best to get back to you!
+    btnName: "Mail me"
+    btnLink: "mailto:diogollongo@gmail.com"
+
+  footer:
+    recentPosts:
+      path: "../../blogs"
+      count: 3
+      title: "Recent Posts"
+      enable: true
+      disableFeaturedImage: false
+    socialNetworks:
+      github: https://github.com/diogolongo
+      linkedin: https://linkedin.com/in/diogolongo
+      twitter: https://twitter.com/diogolongo
+      instagram: https://instagram.com/diogolongo
+      facebook: https://facebook.com/diogolongo
+
+  listPages:
+    disableFeaturedImage: false
+
+  singlePages:
+    socialShare: true
+    readTime:
+      enable: true
+      content: "min read"
+    scrollprogress:
+      enable: true
+    tags:
+      openInNewTab: true
+
+  terms:
+    read: "Read"
+    toc: "Table Of Contents"
+    copyright: "All rights reserved"
+    pageNotFound: "Page not found"
+    emailText: "Check out this site"
+
+  datesFormat:
+    article: "Jan 2, 2006"
+    articleList: "Jan 2, 2006"
+    articleRecent: "Jan 2, 2006"
+--- 
