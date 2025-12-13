@@ -1,5 +1,5 @@
-baseURL = "http://blog.llongo.com.br"
-languageCode = "pt-br"
+baseURL = "http://blog.diogolongo.com.br"
+languageCode = "en"
 title = "Diogo Longo"
 builddrafts                = false
 canonifyurls               = true
