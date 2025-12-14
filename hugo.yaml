@@ -3,6 +3,9 @@ baseURL: "https://diogolongo.github.io"
 languageCode: "en-us"
 title: "Diogo Longo Blog"
 theme: hugo-profile
+services:
+  googleAnalytics:
+    id: G-4PVZM1YKS2
 
 outputs:
   home:
