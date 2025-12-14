@@ -1,5 +1,5 @@
 ---
-title: "Emoji Support"
+title: "Flutter env for Google Jules "
 date: 2025-12-13T12:00:00-03:00
 draft: false
 github_link: "https://github.com/gurusabarish/hugo-profile"
@@ -13,22 +13,14 @@ params:
       - Jules
       - Google
 image: /googlejules.png
-description: "Flutter dev env in google jules"
+description: ""
 toc: 
 ---
-
-
-Flutter dev env in google jules :zap:
-
-## Flutter DEv env in Google Jules
-
-# Flutter env in Google Jules with a single script
 
 When you run Flutter inside an AI coding environment (like Google Jules), the biggest pain is usually **missing system deps**, **Flutter SDK not installed**, and **Android SDK not configured**. The fastest way to make it reproducible is a bootstrap script.
 
 Below is the gist script you can embed directly in you solution.
 
-## Embedded gist
 <code>
 <script class="gist" src="https://gist.github.com/diogolongo/b58b05785782b40ad883e91d26ee5238.js"></script> 
 </code>
