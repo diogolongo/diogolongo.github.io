@@ -52,7 +52,7 @@ Menus:
 params:
   title: "Diogo Longo"
   description: "Experienced full stack developer and solution architect with over 10 years of experience in cloud‑native, microservices, and front‑end technologies."
-  favicon: "/fav.png"
+  favicon: "/rounded_logo.png"
   useBootstrapCDN: false
   mathjax: false
   animate: true
