@@ -21,9 +21,9 @@ When you run Flutter inside an AI coding environment (like Google Jules), the bi
 
 Below is the gist script you can embed directly in you solution.
 
-<code>
-<script class="gist" src="https://gist.github.com/diogolongo/b58b05785782b40ad883e91d26ee5238.js"></script> 
-</code>
+
+<script gist src="https://gist.github.com/diogolongo/b58b05785782b40ad883e91d26ee5238.js"></script>
+
 ---
 
 ## How the script works (step-by-step)
